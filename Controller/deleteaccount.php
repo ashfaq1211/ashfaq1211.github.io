@@ -3,7 +3,7 @@
 	if($_SESSION['user']){ //checks if user is logged in
 	}
 	else{
-		header("location:index.php"); // redirects if user is not logged in
+		header("location:../../MVC/View/index.php"); // redirects if user is not logged in
 	}
 	if($_SERVER['REQUEST_METHOD'] == "GET")
 	{
