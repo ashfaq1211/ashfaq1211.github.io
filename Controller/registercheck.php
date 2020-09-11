@@ -14,19 +14,19 @@
     {
       $bool = false; // sets bool to false
       Print '<script>alert("Username has been taken!");</script>'; //Prompts the user
-      Print '<script>window.location.assign("register.php");</script>'; // redirects to register.php
+      Print '<script>window.location.assign("../../MVC/View/register.php");</script>'; // redirects to register.php
     }
     $table_users_2 = $row['email'];
     if($email == $table_users_2){
       $bool = false; // sets bool to false
       Print '<script>alert("An account with used email already exists!");</script>'; //Prompts the user
-      Print '<script>window.location.assign("register.php");</script>'; // redirects to register.php
+      Print '<script>window.location.assign("../../MVC/View/register.php");</script>'; // redirects to register.php
     }
   }
   if($bool) // checks if bool is true
   {
     mysqli_query($link, "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')"); //Inserts the value to table users
     Print '<script>alert("Successfully Registered!");</script>'; // Prompts the user
-    Print '<script>window.location.assign("index.php");</script>'; // redirects to register.php
+    Print '<script>window.location.assign("../../MVC/View/index.php");</script>'; // redirects to register.php
   }
 ?>
