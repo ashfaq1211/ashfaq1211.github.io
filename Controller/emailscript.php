@@ -3,7 +3,7 @@
    if($_SESSION['user']){ // checks if the user is logged in  
    }
    else{
-      header("location: index.php"); // redirects if user is not logged in
+      header("location: ../../MVC/View/index.php"); // redirects if user is not logged in
    }
    $user = $_SESSION['user']; //assigns user value
 ?>
