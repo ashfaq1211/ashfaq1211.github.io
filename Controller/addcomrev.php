@@ -3,7 +3,7 @@
    if($_SESSION['user']){ // checks if the user is logged in  
    }
    else{
-      header("location: index.php"); // redirects if user is not logged in
+      header("location: ../../MVC/View/index.php"); // redirects if user is not logged in
    }
    $user = $_SESSION['user']; //assigns user value
 ?>
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		$stmt=$conn->prepare($sql);
 		$stmt->bind_param('ssss',$user, $post_id, $comment, $date);
 		$result=$stmt->execute();
-		header('Location:home.php');
+		header('Location:../../MVC/View/home.php');
 		}
 		$conn->close();	
 	}
