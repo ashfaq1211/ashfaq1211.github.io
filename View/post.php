@@ -65,7 +65,7 @@
                 <a class="nav-link login-button" href="login.php">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link login-button" href="logout.php">Logout</a>
+                <a class="nav-link login-button" href="../../MVC/Controller/logout.php">Logout</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link add-button" href="post.php"><i class="fa fa-plus-circle"></i> Post Ad</a>
