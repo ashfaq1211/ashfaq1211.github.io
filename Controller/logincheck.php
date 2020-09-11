@@ -3,7 +3,7 @@
    if($_SESSION['user']){ // checks if the user is logged in  
    }
    else{
-      header("location: index.php"); // redirects if user is not logged in
+      header("location: ../../MVC/View/index.php"); // redirects if user is not logged in
    }
    $user = $_SESSION['user']; //assigns user value
 ?>
@@ -29,20 +29,20 @@
 				if($password == $table_password)
 				{
 					$_SESSION['user'] = $username; //set the username in a session. This serves as a global variable
-					header("location: home.php"); // redirects the user to the authenticated home page
+					header("location: ../../MVC/View/home.php"); // redirects the user to the authenticated home page
 				}
 				
 		}
 		else
 		{
 			Print '<script>alert("Incorrect Password!");</script>'; //Prompts the user
-			Print '<script>window.location.assign("login.php");</script>'; // redirects to login.php
+			Print '<script>window.location.assign("../../MVC/View/login.php");</script>'; // redirects to login.php
 		}
 		}
 	}
 	else
 	{
 		Print '<script>alert("Incorrect Username!");</script>'; //Prompts the user
-		Print '<script>window.location.assign("login.php");</script>'; // redirects to login.php
+		Print '<script>window.location.assign("../../MVC/View/login.php");</script>'; // redirects to login.php
 	}
 ?>
