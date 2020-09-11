@@ -3,7 +3,7 @@
    if($_SESSION['user']){ // checks if the user is logged in  
    }
    else{
-      header("location: index.php"); // redirects if user is not logged in
+      header("location: ../../MVC/View/index.php"); // redirects if user is not logged in
    }
    $user = $_SESSION['user']; //assigns user value
 ?>
@@ -55,10 +55,10 @@ if(isset($_POST['but_upload']) || isset($_POST['but_upload_one'])){
  
 }
 if(isset($_POST['but_upload_one'])){
-  header("location: mydashboard.php");
+  header("location: ../../MVC/View/mydashboard.php");
 }
 if(isset($_POST['no_upload'])){
-  header("location: mydashboard.php");
+  header("location: ../../MVC/View/mydashboard.php");
 }
 ?>
 
@@ -98,7 +98,7 @@ if(isset($_POST['no_upload'])){
     <div class="row">
       <div class="col-md-12">
         <nav class="navbar navbar-expand-lg  navigation">
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="../../MVC/View/index.php">
             <!--<img src="images/logo.png" alt="">-->
             <big>RENT IT</big>
           </a>
@@ -109,21 +109,21 @@ if(isset($_POST['no_upload'])){
             <ul class="navbar-nav ml-auto main-nav ">
               <!--<li class="nav-item active">-->
               <li class="nav-item">
-                <a class="nav-link" href="home.php">Home</a>
+                <a class="nav-link" href="../../MVC/View/home.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mydashboard.php">My Posts</a>
+                <a class="nav-link" href="../../MVC/View/mydashboard.php">My Posts</a>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto mt-10">
               <li class="nav-item">
-                <a class="nav-link login-button" href="login.php">Login</a>
+                <a class="nav-link login-button" href="../../MVC/View/login.php">Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link login-button" href="logout.php">Logout</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link add-button" href="post.php"><i class="fa fa-plus-circle"></i> Post Ad</a>
+                <a class="nav-link add-button" href="../../MVC/View/post.php"><i class="fa fa-plus-circle"></i> Post Ad</a>
               </li>
             </ul>
           </div>
