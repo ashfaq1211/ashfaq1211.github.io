@@ -73,7 +73,7 @@
           <div class="row">
           <div class="col-md-4">.col-sm-4</div>
           <div class="block comment col-md-4">
-          <form action="registercheck.php" method="POST">
+          <form action="../../MVC/Controller/registercheck.php" method="POST">
 
             <div class="row">
               <div class="col-sm-12">
