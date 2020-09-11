@@ -65,7 +65,7 @@
                 <a class="nav-link login-button" href="login.php">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link login-button" href="logout.php">Logout</a>
+                <a class="nav-link login-button" href="../../MVC/Controller/logout.php">Logout</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link add-button" href="post.php"><i class="fa fa-plus-circle"></i> Post Ad</a>
@@ -231,7 +231,7 @@
           <h3>Description</h3> 
           <p><?php echo $desc ?></p>
 
-          <h4 class="card-title"><a href="emailscript.php?id=<?php echo $id ?>"> Book <i class="fa fa-angle-right"></i></a></h4>
+          <h4 class="card-title"><a href="../../MVC/Controller/emailscript.php?id=<?php echo $id ?>"> Book <i class="fa fa-angle-right"></i></a></h4>
 
           <p></p>
           
@@ -245,7 +245,7 @@
         </article>
         <div class="block comment">
           <h4>Leave A Comment</h4>
-          <form action="addcomrev.php?temp=<?php echo $id ?>" method = "POST">
+          <form action="../../MVC/Controller/addcomrev.php?temp=<?php echo $id ?>" method = "POST">
             <!-- Message -->
             <div class="form-group mb-30">
                 <label for="message">Comment or Review</label>
@@ -338,4 +338,3 @@
 </body>
 
 </html>
-
