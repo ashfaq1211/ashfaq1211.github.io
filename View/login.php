@@ -81,7 +81,7 @@
           <div class="row">
           <div class="col-md-4"></div>
           <div class="block comment col-md-4">
-          <form action="checklogin.php" method="POST">
+          <form action="../../MVC/Controller/logincheck.php" method="POST">
 
             <div class="row">
               <div class="col-sm-12">
